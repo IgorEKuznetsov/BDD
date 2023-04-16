@@ -26,3 +26,8 @@ hs_err_pid*
 target/
 out/
 docs/
+
+.idea
+allure-results
+.vscode
+.allure

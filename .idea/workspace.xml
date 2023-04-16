@@ -5,9 +5,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="50b36c8a-db7b-46fc-8d5a-7d009c43a7b6" name="Changes" comment="Add tests">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_04_2023_1_49_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_04_2023_1_49__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/annotations/Driver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ui/annotations/Driver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/annotations/Path.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ui/annotations/Path.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/baseobject/BaseObj.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ui/baseobject/BaseObj.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/data/CoursesData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ui/data/CoursesData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/driver/ChromeWebDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ui/driver/ChromeWebDriver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/driver/DriverFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ui/driver/DriverFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/driver/FirefoxWebDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ui/driver/FirefoxWebDriver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/driver/IDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ui/driver/IDriver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/driver/OperaWebDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ui/driver/OperaWebDriver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/exceptions/DriverTypeNotSupported.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ui/exceptions/DriverTypeNotSupported.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/extensions/UIExtension.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ui/extensions/UIExtension.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/listeners/CustomListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ui/listeners/CustomListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/BasePageAbs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ui/pages/BasePageAbs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/CoursePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ui/pages/CoursePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/CoursesCatalog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ui/pages/CoursesCatalog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/MainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ui/pages/MainPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/waiters/CustomWaiter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ui/waiters/CustomWaiter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ui/courses/test/CoursesCatalogTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/ui/CoursesCatalogTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ui/courses/test/DataProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ui/data/DataProvider.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +73,7 @@
     &quot;project.structure.last.edited&quot;: &quot;Artifacts&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;configurable.group.editor&quot;
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
 }</component>
   <component name="RecentsManager">
@@ -112,7 +131,7 @@
       <module name="test_UI" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ui.courses.test.*" />
+          <option name="PATTERN" value="data.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -218,6 +237,7 @@
               <list>
                 <option value="clean" />
                 <option value="test" />
+                <option value="-DforkCount=0" />
               </list>
             </option>
             <option name="pomFileName" />
@@ -241,8 +261,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.CoursesCatalogTests.checkPageHeaderWhenClickOnCourseDataTest" />
         <item itemvalue="JUnit.CoursesCatalogTests.checkPageHeaderWhenClickOnCourseTest" />
+        <item itemvalue="JUnit.CoursesCatalogTests.checkPageHeaderWhenClickOnCourseDataTest" />
         <item itemvalue="JUnit.CoursesCatalogTests.checkDateWhenClickEarliestCourseTest" />
         <item itemvalue="JUnit.CoursesCatalogTests.checkBoxIsSelectedTest" />
         <item itemvalue="JUnit.CoursesCatalogTests" />
@@ -268,6 +288,7 @@
       <workItem from="1680518514435" duration="46458000" />
       <workItem from="1680979856508" duration="10852000" />
       <workItem from="1681134095725" duration="3692000" />
+      <workItem from="1681600963773" duration="3522000" />
     </task>
     <task id="LOCAL-00001" summary="Update POM">
       <created>1678900492461</created>
