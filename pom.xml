@@ -15,7 +15,8 @@
         <junit.version>5.9.1</junit.version>
         <faker.version>1.0.2</faker.version>
         <maven.compiler.plugin.version>3.8.1</maven.compiler.plugin.version>
-
+        <cucumber.version>5.5.0</cucumber.version>
+        <java.version>11</java.version>
         <browser>chrome</browser>
         <webdriver.timeouts.implicitlywait>5000</webdriver.timeouts.implicitlywait>
 
@@ -58,12 +59,22 @@
         <dependency>
             <groupId>io.cucumber</groupId>
             <artifactId>cucumber-guice</artifactId>
-            <version>7.8.1</version>
+            <version>${cucumber.version}</version>
         </dependency>
         <dependency>
             <groupId>com.google.inject</groupId>
             <artifactId>guice</artifactId>
             <version>5.1.0</version>
+        </dependency>
+        <dependency>
+            <groupId>io.cucumber</groupId>
+            <artifactId>cucumber-junit-platform-engine</artifactId>
+            <version>${cucumber.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>io.cucumber</groupId>
+            <artifactId>cucumber-java</artifactId>
+            <version>${cucumber.version}</version>
         </dependency>
 
 
@@ -89,7 +100,8 @@
                     <systemPropertyVariables>
                         <driver.host>${driver.host}</driver.host>
                         <browser>${browser}</browser>
-                        <webdriver.timeouts.implicitlywait>${webdriver.timeouts.implicitlywait}</webdriver.timeouts.implicitlywait>
+                        <webdriver.timeouts.implicitlywait>${webdriver.timeouts.implicitlywait}
+                        </webdriver.timeouts.implicitlywait>
                     </systemPropertyVariables>
 
                 </configuration>
@@ -100,8 +112,8 @@
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>${maven.compiler.plugin.version}</version>
                 <configuration>
-                    <source>11</source>
-                    <target>11</target>
+                    <source>${java.version}</source>
+                    <target>${java.version}</target>
                     <encoding>UTF-8</encoding>
                     <showDeprecation>true</showDeprecation>
                 </configuration>
@@ -148,7 +160,6 @@
             </plugin>
         </plugins>
     </build>
-
 
 
 </project>

@@ -1,5 +1,7 @@
 package com.ui.baseobject;
 
+import com.google.inject.Inject;
+import com.ui.support.GuiceScoped;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.PageFactory;
@@ -13,11 +15,16 @@ public abstract class BaseObj<T> {
   protected CustomWaiter waiter;
   protected Actions actions;
   protected Logger log;
-  public BaseObj(WebDriver driver) {
-    this.driver = driver;
+  protected GuiceScoped guiceScoped;
+  @Inject
+  public BaseObj(GuiceScoped guiceScoped) {
+    this.guiceScoped = guiceScoped;
+    this.driver = guiceScoped.driver;
+
     this.actions = new Actions(driver);
     this.log = LoggerFactory.getLogger("otus");
     this.waiter = new CustomWaiter(driver);
+
     PageFactory.initElements(driver, this);
     driver.manage().window().maximize();
 

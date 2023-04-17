@@ -10,8 +10,8 @@ public class DriverFactory {
 
   private String browserType = System.getProperty("browser", "chrome").toLowerCase(Locale.ROOT);
 
-  public EventFiringWebDriver getBrowserDriver() {
-    switch (this.browserType) {
+  public EventFiringWebDriver getBrowserDriver(String browserName) {
+    switch (browserName) {
       case "chrome":
         return new EventFiringWebDriver(new ChromeWebDriver().getDriver());
       case "firefox":

@@ -1,5 +1,7 @@
 package com.ui.pages;
 
+import com.google.inject.Inject;
+import com.ui.support.GuiceScoped;
 import org.junit.jupiter.api.Assertions;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -7,12 +9,13 @@ import org.openqa.selenium.WebDriver;
 public class CoursePage extends BasePageAbs<CoursePage> {
   private String date;
 
-  public CoursePage(WebDriver driver) {
-    super(driver);
+  @Inject
+  public CoursePage(GuiceScoped guiceScoped) {
+    super(guiceScoped);
   }
 
-  public CoursePage(WebDriver driver, String date) {
-    super(driver);
+  public CoursePage(GuiceScoped guiceScoped, String date) {
+    super(guiceScoped);
     this.date = date;
   }
 

@@ -1,7 +1,9 @@
 package com.ui.pages;
 
+import com.google.inject.Inject;
 import com.ui.annotations.Path;
 import com.ui.data.CoursesData;
+import com.ui.support.GuiceScoped;
 import org.junit.jupiter.api.Assertions;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -18,9 +20,9 @@ import java.util.stream.Collectors;
 
 @Path("/")
 public class MainPage extends BasePageAbs<MainPage> {
-
-  public MainPage(WebDriver driver) {
-    super(driver);
+  @Inject
+  public MainPage(GuiceScoped guiceScoped) {
+    super(guiceScoped);
   }
 
   private String searchCourseDate;
@@ -34,7 +36,7 @@ public class MainPage extends BasePageAbs<MainPage> {
     WebElement courseSelector = driver.findElement(By.xpath(String.format(courseNameLocator, coursesData.getName())));
     clickCourseBy(courseSelector);
 
-    return new CoursePage(driver);
+    return new CoursePage(guiceScoped);
   }
 
   public CoursePage clickCourseByDate(Boolean isEarly) {
@@ -42,7 +44,7 @@ public class MainPage extends BasePageAbs<MainPage> {
         .filter(el -> el.getText().contains(getCourseDate(isEarly))).collect(Collectors.toList()).get(0);
     clickCourseBy(courseSelector);
 
-    return new CoursePage(driver, searchCourseDate);
+    return new CoursePage(guiceScoped, searchCourseDate);
   }
 
   public void clickCourseBy(WebElement element) {

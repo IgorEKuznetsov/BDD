@@ -1,8 +1,10 @@
 package com.ui.pages;
 
+import com.google.inject.Inject;
 import com.ui.annotations.Path;
 import com.ui.baseobject.BaseObj;
 import com.ui.data.CoursesData;
+import com.ui.support.GuiceScoped;
 import org.apache.commons.lang3.StringUtils;
 import org.junit.jupiter.api.Assertions;
 import org.openqa.selenium.By;
@@ -13,8 +15,9 @@ import org.openqa.selenium.WebElement;
 import java.lang.annotation.Annotation;
 
 public abstract class BasePageAbs<T> extends BaseObj<T> {
-  public BasePageAbs(WebDriver driver) {
-    super(driver);
+  @Inject
+  public BasePageAbs(GuiceScoped guiceScoped) {
+    super(guiceScoped);
   }
 
   public T open() {

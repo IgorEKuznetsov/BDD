@@ -4,29 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="50b36c8a-db7b-46fc-8d5a-7d009c43a7b6" name="Changes" comment="Add tests">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="50b36c8a-db7b-46fc-8d5a-7d009c43a7b6" name="Changes" comment="Add GuiceScoped">
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_1_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_engine_1_9_1.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/annotations/Driver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ui/annotations/Driver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/annotations/Path.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ui/annotations/Path.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/baseobject/BaseObj.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ui/baseobject/BaseObj.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/data/CoursesData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ui/data/CoursesData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/driver/ChromeWebDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ui/driver/ChromeWebDriver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/driver/DriverFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ui/driver/DriverFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/driver/FirefoxWebDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ui/driver/FirefoxWebDriver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/driver/IDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ui/driver/IDriver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/driver/OperaWebDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ui/driver/OperaWebDriver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/exceptions/DriverTypeNotSupported.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ui/exceptions/DriverTypeNotSupported.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/extensions/UIExtension.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ui/extensions/UIExtension.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/listeners/CustomListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ui/listeners/CustomListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/BasePageAbs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ui/pages/BasePageAbs.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/CoursePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ui/pages/CoursePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/CoursesCatalog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ui/pages/CoursesCatalog.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/MainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ui/pages/MainPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/waiters/CustomWaiter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ui/waiters/CustomWaiter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ui/courses/test/CoursesCatalogTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/ui/CoursesCatalogTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ui/courses/test/DataProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ui/data/DataProvider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ui/baseobject/BaseObj.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ui/baseobject/BaseObj.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ui/driver/DriverFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ui/driver/DriverFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ui/extensions/UIExtension.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ui/pages/BasePageAbs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ui/pages/BasePageAbs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ui/pages/CoursePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ui/pages/CoursePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ui/pages/CoursesCatalog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ui/pages/CoursesCatalog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ui/pages/MainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ui/pages/MainPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ui/support/GuiceScoped.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ui/support/GuiceScoped.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/ui/CoursesCatalogTests.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,29 +53,35 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Игорь/Desktop/ikv/otus/test_UI/src/test&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Artifacts&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/Игорь/Desktop/ikv/otus/BDD/src/test/resources",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="pages" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Игорь\Desktop\ikv\otus\BDD\src\test\resources" />
       <recent name="C:\Users\Игорь\Desktop\ikv\otus\test_UI\src\test" />
       <recent name="C:\Users\Игорь\Desktop\ikv\otus\test_UI\src\main\resources" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Игорь\Desktop\ikv\otus\BDD\src\test\resources\com.ui\com\ui" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.ui.hooks" />
+      <recent name="com.ui" />
       <recent name="extensions" />
       <recent name="exceptions" />
     </key>
@@ -96,23 +93,23 @@
       <command value="mvn clean test #checkPageHeaderWhenClickOnCourseTest()" />
     </option>
   </component>
-  <component name="RunManager" selected="Maven.test_UI ">
-    <configuration name="CoursesCatalogTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.Runner_Test">
+    <configuration name="Scenario: Открытие главной страницы" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/com.ui/courses.feature" />
+      <option name="GLUE" value="com.ui.hooks com.ui.steps.pages" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="test_UI" />
-      <option name="PACKAGE_NAME" value="ui.courses.test" />
-      <option name="MAIN_CLASS_NAME" value="ui.courses.test.CoursesCatalogTests" />
-      <option name="METHOD_NAME" value="" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CoursesCatalogTests.checkBoxIsSelectedTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="test_UI" />
-      <option name="PACKAGE_NAME" value="ui.courses.test" />
-      <option name="MAIN_CLASS_NAME" value="ui.courses.test.CoursesCatalogTests" />
-      <option name="METHOD_NAME" value="checkBoxIsSelectedTest" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="NAME_FILTER" value="^Открытие главной страницы$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Открытие главной страницы$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Открытие главной страницы" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -149,6 +146,22 @@
       <option name="MAIN_CLASS_NAME" value="ui.courses.test.CoursesCatalogTests" />
       <option name="METHOD_NAME" value="checkPageHeaderWhenClickOnCourseTest" />
       <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Runner_Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="test_UI" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ui.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ui" />
+      <option name="MAIN_CLASS_NAME" value="com.ui.Runner_Test" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -252,20 +265,20 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="Cucumber Java.Scenario: Открытие главной страницы" />
+      <item itemvalue="JUnit.Runner_Test" />
       <item itemvalue="JUnit.CoursesCatalogTests.checkPageHeaderWhenClickOnCourseDataTest" />
       <item itemvalue="JUnit.CoursesCatalogTests.checkDateWhenClickEarliestCourseTest" />
       <item itemvalue="JUnit.CoursesCatalogTests.checkPageHeaderWhenClickOnCourseTest" />
-      <item itemvalue="JUnit.CoursesCatalogTests" />
-      <item itemvalue="JUnit.CoursesCatalogTests.checkBoxIsSelectedTest" />
       <item itemvalue="Maven.test_UI " />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.Runner_Test" />
+        <item itemvalue="Cucumber Java.Scenario: Открытие главной страницы" />
         <item itemvalue="JUnit.CoursesCatalogTests.checkPageHeaderWhenClickOnCourseTest" />
         <item itemvalue="JUnit.CoursesCatalogTests.checkPageHeaderWhenClickOnCourseDataTest" />
         <item itemvalue="JUnit.CoursesCatalogTests.checkDateWhenClickEarliestCourseTest" />
-        <item itemvalue="JUnit.CoursesCatalogTests.checkBoxIsSelectedTest" />
-        <item itemvalue="JUnit.CoursesCatalogTests" />
       </list>
     </recent_temporary>
   </component>
@@ -289,6 +302,8 @@
       <workItem from="1680979856508" duration="10852000" />
       <workItem from="1681134095725" duration="3692000" />
       <workItem from="1681600963773" duration="3522000" />
+      <workItem from="1681630676894" duration="227000" />
+      <workItem from="1681760613169" duration="7474000" />
     </task>
     <task id="LOCAL-00001" summary="Update POM">
       <created>1678900492461</created>
@@ -325,7 +340,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680989765263</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Add GuiceScoped">
+      <created>1681630863755</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1681630863755</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -346,6 +368,7 @@
     <MESSAGE value="Update POM" />
     <MESSAGE value="Add test objects" />
     <MESSAGE value="Add tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add tests" />
+    <MESSAGE value="Add GuiceScoped" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add GuiceScoped" />
   </component>
 </project>
