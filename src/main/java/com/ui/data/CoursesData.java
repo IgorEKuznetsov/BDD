@@ -1,5 +1,6 @@
 package com.ui.data;
 
+import com.google.inject.Inject;
 import org.junit.jupiter.params.provider.Arguments;
 
 import java.util.stream.Stream;

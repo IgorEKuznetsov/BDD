@@ -16,6 +16,7 @@ public class ChromeWebDriver implements IDriver {
 
     chromeOptions.addArguments("--remote-allow-origins=*");
     chromeOptions.addArguments("--disable-notifications");
+    chromeOptions.addArguments("--start-maximized");
 
     WebDriverManager.chromedriver().setup();
 

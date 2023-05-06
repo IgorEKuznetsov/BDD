@@ -11,22 +11,23 @@ import com.ui.waiters.CustomWaiter;
 
 public abstract class BaseObj<T> {
 
-  protected WebDriver driver;
-  protected CustomWaiter waiter;
+
+  //protected WebDriver driver;
+  @Inject
+  public CustomWaiter waiter;
+
   protected Actions actions;
   protected Logger log;
-  protected GuiceScoped guiceScoped;
+  @Inject
+  public GuiceScoped guiceScoped;
+
   @Inject
   public BaseObj(GuiceScoped guiceScoped) {
     this.guiceScoped = guiceScoped;
-    this.driver = guiceScoped.driver;
-
-    this.actions = new Actions(driver);
+    this.actions = new Actions(this.guiceScoped.driver);
     this.log = LoggerFactory.getLogger("otus");
-    this.waiter = new CustomWaiter(driver);
-
-    PageFactory.initElements(driver, this);
-    driver.manage().window().maximize();
+    this.waiter = new CustomWaiter(this.guiceScoped);
+    PageFactory.initElements(this.guiceScoped.driver, this);
 
   }
 }

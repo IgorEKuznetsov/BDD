@@ -4,11 +4,11 @@ import com.ui.exceptions.DriverTypeNotSupported;
 
 import org.openqa.selenium.support.events.EventFiringWebDriver;
 
-import java.util.Locale;
+
 
 public class DriverFactory {
 
-  private String browserType = System.getProperty("browser", "chrome").toLowerCase(Locale.ROOT);
+  //private String browserType = System.getProperty("browser", "chrome").toLowerCase(Locale.ROOT);
 
   public EventFiringWebDriver getBrowserDriver(String browserName) {
     switch (browserName) {
@@ -20,7 +20,7 @@ public class DriverFactory {
         return new EventFiringWebDriver(new OperaWebDriver().getDriver());
       default:
         try {
-          throw new DriverTypeNotSupported(this.browserType);
+          throw new DriverTypeNotSupported(browserName);
         } catch (DriverTypeNotSupported e) {
           e.printStackTrace();
         }

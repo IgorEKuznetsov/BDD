@@ -3,28 +3,24 @@ package com.ui.pages;
 import com.google.inject.Inject;
 import com.ui.support.GuiceScoped;
 import org.junit.jupiter.api.Assertions;
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+
 
 public class CoursePage extends BasePageAbs<CoursePage> {
-  private String date;
+
 
   @Inject
   public CoursePage(GuiceScoped guiceScoped) {
     super(guiceScoped);
   }
 
-  public CoursePage(GuiceScoped guiceScoped, String date) {
-    super(guiceScoped);
-    this.date = date;
+
+  @FindBy(xpath = "//h1[contains(text(), 'Преподаватели')]")
+  private WebElement teachersInfo;
+
+  public void teachersInfoIsVisible() {
+    Assertions.assertTrue(teachersInfo.isDisplayed());
   }
 
-  private String startCourseLocator = "//*[contains(text(), '%s')]";
-
-  public void checkDate() {
-    String locator = String.format(startCourseLocator, date);
-    String coursePageDateStart = driver.findElements(By.xpath(locator)).get(0).getText();
-    Assertions.assertTrue(coursePageDateStart.contains(date));
-    log.info("Start date: " + date);
-  }
 }

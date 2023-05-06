@@ -12,7 +12,7 @@ public class FirefoxWebDriver implements IDriver {
     FirefoxOptions firefoxOptions = new FirefoxOptions();
     firefoxOptions.addArguments("--no-sandbox");
     firefoxOptions.addArguments("--ignore-certificate-errors");
-
+    firefoxOptions.addArguments("--start-maximized");
 
 
     WebDriverManager.firefoxdriver().setup();
