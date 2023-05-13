@@ -6,10 +6,11 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="test_UI" />
+        <module name="BDD_UI" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="BDD_UI" target="11" />
       <module name="test_UI" target="11" />
     </bytecodeTargetLevel>
   </component>

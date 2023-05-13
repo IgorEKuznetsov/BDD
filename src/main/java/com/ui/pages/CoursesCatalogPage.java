@@ -40,10 +40,10 @@ public class CoursesCatalogPage extends BasePageAbs<CoursesCatalogPage> {
   @FindBy(tagName = "h5")
   WebElement additionalInfo;
 
-  @FindBy(css = "#__next > div[class] > div:nth-child(2)")
+  @FindBy(css = "#__next > div[class] > div:first-child")
   WebElement notifier;
 
-  @FindBy(css = "#__next > div[class] > div:nth-child(3) > div >div:first-child + section")
+  @FindBy(css = "#__next > div[class] > div:nth-child(2) > div >div:first-child + section")
   WebElement section;
 
 
